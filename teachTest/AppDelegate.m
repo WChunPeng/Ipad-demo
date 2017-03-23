@@ -7,8 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "LeftRootViewController.h"
+#import "OneViewController.h"
+#import "TwoViewController.h"
+#import "ThirdViewController.h"
+#import "ForthViewController.h"
+#import "BaseNavigationController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<RootViewControlerDelegate>
+
+@property(nonatomic, strong) UISplitViewController *split;
+@property(nonatomic, strong) LeftRootViewController *rootVC;
+@property(nonatomic, strong) OneViewController *OneVC;
+@property(nonatomic, strong) TwoViewController *twoVC;
+@property(nonatomic, strong) ThirdViewController *thirdVC;
+@property(nonatomic, strong) ForthViewController *fourVC;
+
+@property(nonatomic, strong) __block BaseNavigationController *baseNav;
 
 @end
 
@@ -17,9 +32,78 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self settingRootViewController];
     return YES;
 }
 
+- (void)settingRootViewController {
+    self.split = [[UISplitViewController alloc] init];
+    [self.split setPresentsWithGesture:YES];
+    //左边根目录
+    self.rootVC = [[LeftRootViewController alloc] initWithNibName:@"LeftRootViewController" bundle:nil];
+    [self.split setValue:@78.0F forKey:@"masterColumnWidth"];
+    self.rootVC.delegate = self;
+    //右边详情页面
+    self.OneVC = [[OneViewController alloc] init];
+    [self setNavigationRootVC:self.OneVC];
+    [self.split setViewControllers:@[self.rootVC, self.baseNav]];
+    [self.split setDelegate:self.baseNav];
+    
+    self.window.rootViewController = self.split;
+}
+
+#pragma mark - navigation
+
+- (void)setNavigationRootVC:(UIViewController *)vc {
+    self.baseNav = [[BaseNavigationController alloc] initWithRootViewController:vc];
+}
+
+#pragma mark - delegate methods
+
+- (void)switchControllerWithContrllerName:(NSInteger)btnTag
+{
+    switch ((int) btnTag) {
+        case 100:
+        {
+            if (!self.OneVC) {
+                self.OneVC = [[OneViewController alloc] init];
+            }
+            [self setNavigationRootVC:self.OneVC];
+
+        }
+            break;
+        case 101:
+        {
+            if (!self.twoVC) {
+                self.twoVC = [[TwoViewController alloc] init];
+            }
+            [self setNavigationRootVC:self.twoVC];
+        }
+            break;
+        case 102:
+        {
+            if (!self.thirdVC) {
+                self.thirdVC = [[ThirdViewController alloc] init];
+            }
+            [self setNavigationRootVC:self.thirdVC];
+        }
+            break;
+        case 103:
+        {
+            if (!self.fourVC) {
+                self.fourVC = [[ForthViewController alloc] init];
+            }
+            [self setNavigationRootVC:self.fourVC];
+        }
+            break;
+ 
+        default:
+            break;
+    }
+    
+    [self.split setViewControllers:@[self.rootVC, self.baseNav]];
+    [self.split setDelegate:self.baseNav];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

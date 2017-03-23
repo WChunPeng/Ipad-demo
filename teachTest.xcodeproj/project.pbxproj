@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840D952A1E8372C700902161 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840D95291E8372C700902161 /* ViewController.m */; };
 		84FD299B1E836714008BC067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD299A1E836714008BC067 /* main.m */; };
 		84FD299E1E836714008BC067 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD299D1E836714008BC067 /* AppDelegate.m */; };
-		84FD29A11E836714008BC067 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29A01E836714008BC067 /* ViewController.m */; };
 		84FD29A41E836714008BC067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD29A21E836714008BC067 /* Main.storyboard */; };
 		84FD29A61E836714008BC067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD29A51E836714008BC067 /* Assets.xcassets */; };
 		84FD29A91E836714008BC067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD29A71E836714008BC067 /* LaunchScreen.storyboard */; };
 		84FD29B41E836715008BC067 /* teachTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29B31E836715008BC067 /* teachTestTests.m */; };
 		84FD29BF1E836715008BC067 /* teachTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29BE1E836715008BC067 /* teachTestUITests.m */; };
+		84FD29CE1E83674E008BC067 /* LeftRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29CD1E83674E008BC067 /* LeftRootViewController.m */; };
+		84FD29D11E83677E008BC067 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29D01E83677E008BC067 /* OneViewController.m */; };
+		84FD29D41E83678A008BC067 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29D31E83678A008BC067 /* TwoViewController.m */; };
+		84FD29D71E836796008BC067 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29D61E836796008BC067 /* ThirdViewController.m */; };
+		84FD29DA1E8367A2008BC067 /* ForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29D91E8367A2008BC067 /* ForthViewController.m */; };
+		84FD29DD1E83699D008BC067 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD29DC1E83699D008BC067 /* BaseNavigationController.m */; };
+		84FD29E11E836AE9008BC067 /* LeftRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FD29E01E836AE9008BC067 /* LeftRootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840D95281E8372C700902161 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		840D95291E8372C700902161 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84FD29961E836714008BC067 /* teachTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teachTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD299A1E836714008BC067 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84FD299C1E836714008BC067 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FD299D1E836714008BC067 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84FD299F1E836714008BC067 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84FD29A01E836714008BC067 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84FD29A31E836714008BC067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84FD29A51E836714008BC067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FD29A81E836714008BC067 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,19 @@
 		84FD29BA1E836715008BC067 /* teachTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teachTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD29BE1E836715008BC067 /* teachTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = teachTestUITests.m; sourceTree = "<group>"; };
 		84FD29C01E836715008BC067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FD29CC1E83674E008BC067 /* LeftRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftRootViewController.h; sourceTree = "<group>"; };
+		84FD29CD1E83674E008BC067 /* LeftRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftRootViewController.m; sourceTree = "<group>"; };
+		84FD29CF1E83677E008BC067 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		84FD29D01E83677E008BC067 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		84FD29D21E83678A008BC067 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		84FD29D31E83678A008BC067 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		84FD29D51E836796008BC067 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		84FD29D61E836796008BC067 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		84FD29D81E8367A2008BC067 /* ForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthViewController.h; sourceTree = "<group>"; };
+		84FD29D91E8367A2008BC067 /* ForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthViewController.m; sourceTree = "<group>"; };
+		84FD29DB1E83699D008BC067 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		84FD29DC1E83699D008BC067 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		84FD29E01E836AE9008BC067 /* LeftRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftRootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +123,21 @@
 			children = (
 				84FD299C1E836714008BC067 /* AppDelegate.h */,
 				84FD299D1E836714008BC067 /* AppDelegate.m */,
-				84FD299F1E836714008BC067 /* ViewController.h */,
-				84FD29A01E836714008BC067 /* ViewController.m */,
+				840D95281E8372C700902161 /* ViewController.h */,
+				840D95291E8372C700902161 /* ViewController.m */,
+				84FD29DB1E83699D008BC067 /* BaseNavigationController.h */,
+				84FD29DC1E83699D008BC067 /* BaseNavigationController.m */,
+				84FD29CC1E83674E008BC067 /* LeftRootViewController.h */,
+				84FD29CD1E83674E008BC067 /* LeftRootViewController.m */,
+				84FD29E01E836AE9008BC067 /* LeftRootViewController.xib */,
+				84FD29CF1E83677E008BC067 /* OneViewController.h */,
+				84FD29D01E83677E008BC067 /* OneViewController.m */,
+				84FD29D21E83678A008BC067 /* TwoViewController.h */,
+				84FD29D31E83678A008BC067 /* TwoViewController.m */,
+				84FD29D51E836796008BC067 /* ThirdViewController.h */,
+				84FD29D61E836796008BC067 /* ThirdViewController.m */,
+				84FD29D81E8367A2008BC067 /* ForthViewController.h */,
+				84FD29D91E8367A2008BC067 /* ForthViewController.m */,
 				84FD29A21E836714008BC067 /* Main.storyboard */,
 				84FD29A51E836714008BC067 /* Assets.xcassets */,
 				84FD29A71E836714008BC067 /* LaunchScreen.storyboard */,
@@ -247,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FD29A91E836714008BC067 /* LaunchScreen.storyboard in Resources */,
+				84FD29E11E836AE9008BC067 /* LeftRootViewController.xib in Resources */,
 				84FD29A61E836714008BC067 /* Assets.xcassets in Resources */,
 				84FD29A41E836714008BC067 /* Main.storyboard in Resources */,
 			);
@@ -273,9 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84FD29A11E836714008BC067 /* ViewController.m in Sources */,
+				840D952A1E8372C700902161 /* ViewController.m in Sources */,
+				84FD29D11E83677E008BC067 /* OneViewController.m in Sources */,
+				84FD29DA1E8367A2008BC067 /* ForthViewController.m in Sources */,
+				84FD29CE1E83674E008BC067 /* LeftRootViewController.m in Sources */,
+				84FD29D41E83678A008BC067 /* TwoViewController.m in Sources */,
+				84FD29DD1E83699D008BC067 /* BaseNavigationController.m in Sources */,
 				84FD299E1E836714008BC067 /* AppDelegate.m in Sources */,
 				84FD299B1E836714008BC067 /* main.m in Sources */,
+				84FD29D71E836796008BC067 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +547,7 @@
 				84FD29C51E836715008BC067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84FD29C61E836715008BC067 /* Build configuration list for PBXNativeTarget "teachTestTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +556,7 @@
 				84FD29C81E836715008BC067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84FD29C91E836715008BC067 /* Build configuration list for PBXNativeTarget "teachTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +565,7 @@
 				84FD29CB1E836715008BC067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
